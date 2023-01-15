@@ -1,0 +1,10 @@
+.contenedor-home{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-home{
+background-color:rgb(88, 87, 87);
+color: white;
+}
