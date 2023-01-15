@@ -1,17 +1,28 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 import "./card.css"
 
-const CardMovie=({titulo, img, descripcion})=> {
+const CardMovie=({titulo, img, fecha,id})=> {
+  
+  const navigate = useNavigate()
+
+  const verDetalle = (id)=> {
+    navigate (`/details/${id}`)
+  }
+
     return (
       <div className="contenedor-cardmovie">
+        <div className="contenedor-header-img">
+            <img className="header-img" src={img} alt=""  height={200}/>
+        </div>
         <div>
           <h3>{titulo}</h3>
         </div>
-        <div className="header-img">
-            <img src={img} alt="" width={200}/>
-        </div>
+          <div>
+            <p className="fechapeli">Año de Estreno {fecha}</p>
+          </div>
         <div>
-          <h4>{descripcion}</h4>
+          <button onClick={ ()=>verDetalle(id) }>Ver mas</button>
         </div>
       </div>
     );

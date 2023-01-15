@@ -1,3 +1,32 @@
 .contenedor-cardmovie{
-    width: 400px;
+    width: 300px;
+    min-height: 400px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 3px;
+}
+
+.contnedor-header-img{
+    display: flex;
+    justify-content:center;
+    object-fit:contain;
+}
+.header-img{
+    width: -webkit-fill-available;
+    border-start-end-radius: 8px;
+    border-start-start-radius: 8px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.fechapeli{
+font-size: 12px;
 }

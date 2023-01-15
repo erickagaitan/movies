@@ -5,6 +5,8 @@
 }
 
 .contenedor-home{
-background-color:rgb(88, 87, 87);
-color: white;
+    background-color:rgb(88, 87, 87);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }

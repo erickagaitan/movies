@@ -1,0 +1,11 @@
+.descripdetails{
+    display: inline-table;
+    text-align: justify;
+    width: 600px;
+    padding-bottom: 30px;
+}
+
+.imgdescrip{
+    height: 400px;
+    padding-top: 30px;
+}
