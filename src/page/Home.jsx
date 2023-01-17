@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react";
 import CardMovie from "../components/movieCard/CardMovie";
+import Buscador from '../components/buscador/Buscador';
 import { getPopular } from "../Api/movie";
-import Harry from '../assets/img/imagen_harry.jpg'
-
 
 import "./home.css"
 
@@ -10,15 +9,23 @@ const Home=()=> {
 
     const [peliculas, setPelicuas] = useState()
 
+    const[ textoBusqueda, setTextoBusqueda] = useState()
+
     useEffect(() => {
-        getPopular(1).then((respuesta) => {
+        getPopular(5).then((respuesta) => {
             setPelicuas(respuesta.results)
         })
     },[])
 
 
     return (
+        <>
+        <div>
+        <Buscador setTextoBusqueda={setTextoBusqueda} />
+        </div>
+
         <div className="contenedor-home">
+            
             {
                 peliculas?.map((respuesta,index)=> (
                     respuesta.backdrop_path &&
@@ -28,10 +35,11 @@ const Home=()=> {
                         img= {`https://image.tmdb.org/t/p/w500${respuesta.backdrop_path}`}
                         fecha={respuesta.release_date}
                         id={respuesta.id}
-                    />
+                    /> 
                 ))
             }
         </div>
+        </>
 
 
     );
