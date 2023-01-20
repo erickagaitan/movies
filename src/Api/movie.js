@@ -1,4 +1,4 @@
-const api_key = '70631dfdc1d4ef58b1c255cc90e62b6c';
+import { api_key } from "../constant";
 
 export const getPopular = (page = 1) => {
 
@@ -16,7 +16,7 @@ export const getPopular = (page = 1) => {
 
 export const getDetails = (id) => {
 
-    const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=70631dfdc1d4ef58b1c255cc90e62b6c&language=es-Es`
+    const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=${api_key}&language=es-Es`
 
     return fetch(URL)
     .then((response) => {
@@ -30,7 +30,7 @@ export const getDetails = (id) => {
 
 
 export function searchMoviesApi(textoBusqueda) {
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=70631dfdc1d4ef58b1c255cc90e62b6c&language=en-US&query=${textoBusqueda}`;
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&language=en-US&query=${textoBusqueda}`;
   
     return fetch(url)
       .then((response) => {
