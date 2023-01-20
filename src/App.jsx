@@ -2,8 +2,8 @@ import './App.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom'; 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import Home from './page/Home';
 import Details from './page/Details/Details';
+import Home from './page/home/Home';
 
 function App() {
   return (

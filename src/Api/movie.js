@@ -29,3 +29,14 @@ export const getDetails = (id) => {
 }
 
 
+export function searchMoviesApi(textoBusqueda) {
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=70631dfdc1d4ef58b1c255cc90e62b6c&language=en-US&query=${textoBusqueda}`;
+  
+    return fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        return result;
+      });
+  }

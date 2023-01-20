@@ -1,13 +1,15 @@
 import React, {useEffect, useState} from "react";
-import CardMovie from "../components/movieCard/CardMovie";
-import Buscador from '../components/buscador/Buscador';
-import { getPopular } from "../Api/movie";
+import CardMovie from "../../components/movieCard/CardMovie";
+import Buscador from '../../components/buscador/Buscador';
+import { getPopular, searchMoviesApi } from "../../Api/movie";
 
 import "./home.css"
 
 const Home=()=> {
 
     const [peliculas, setPelicuas] = useState()
+    
+    const [peliculasBuscador, setPeliculasBuscador] = useState()
 
     const[ textoBusqueda, setTextoBusqueda] = useState()
 
@@ -17,6 +19,15 @@ const Home=()=> {
         })
     },[])
 
+    useEffect(() => {
+        if(textoBusqueda){
+            searchMoviesApi(textoBusqueda).then((respuesta) => {
+            setPeliculasBuscador(respuesta.results)
+            }
+        )}
+    },[textoBusqueda])
+
+    const respuestaPelicula = peliculasBuscador ? peliculasBuscador : peliculas;
 
     return (
         <>
@@ -27,7 +38,7 @@ const Home=()=> {
         <div className="contenedor-home">
             
             {
-                peliculas?.map((respuesta,index)=> (
+                respuestaPelicula?.map((respuesta,index)=> (
                     respuesta.backdrop_path &&
                     <CardMovie 
                         key={index}

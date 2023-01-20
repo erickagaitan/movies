@@ -4,7 +4,6 @@ import Logo from '../../assets/img/logo_pelicula.svg'
 
 import './header.css'
 
-
 const Header=()=> {
 
   const navigate = useNavigate()
@@ -12,7 +11,6 @@ const Header=()=> {
   const VistaHome = ()=> {
     navigate (`/`)
   }
-
 
     return (
       <div className="contenedor-header">

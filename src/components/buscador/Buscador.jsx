@@ -9,15 +9,14 @@ const Buscador = ({setTextoBusqueda})=> {
 
     return (
 
-            <div className="container-buscador">
-                <input 
-                    type="text"  
-                    className="buscar" 
-                    placeholder="Busca tu pelicula"
-                    onChange={(texto) => textDeEntrada(texto) }
-                />
-                
-            </div>
+        <div className="container-buscador">
+            <input 
+                type="text"  
+                className="buscar" 
+                placeholder="Busca tu pelicula"
+                onChange={(texto) => textDeEntrada(texto) }
+            />        
+        </div>
         
     )
 }
