@@ -5,10 +5,15 @@
     min-width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .texto-footer{
     color: white;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+}
+
+.icon-github {
+    cursor: pointer;
 }

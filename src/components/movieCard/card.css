@@ -1,13 +1,19 @@
 .contenedor-cardmovie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 300px;
     min-height: 400px;
     max-width: 400px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 8px;
     border: 1px solid;
     margin: 10px;
 }
-
+.contenedor-cardmovie:hover {
+    background-color: #83838321;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
+}
 .contnedor-header-img{
     display: flex;
     justify-content:center;
@@ -19,13 +25,32 @@
     border-start-start-radius: 8px;
 }
 
+.container-cardmovie-title{
+    padding: 5px;
+}
+
+.container-cardmovie-title h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cont-cardmovie-button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 button{
     background-color: black;
     color: white;
     width: 80px;
     height: 30px;
     border-radius: 5px;
-    margin-top: 30px;
+    cursor:pointer;
+}
+
+button:hover{
+    background: #000000b8;
+    border:none
 }
 
 .fechapeli{

@@ -1,26 +1,25 @@
 .buscar{
-height: 30px;
-width: 200px;
-border-radius: 5px;
-border: 1px solid white;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-left: 15px;
 }
 
 .container-buscador{
-padding: 20px;
-background-color:rgb(88, 87, 87);
+    padding: 20px;
+    background-color:rgb(88, 87, 87);
 }
 
 .container-buscador i {
-position: absolute;
-margin-right: 30px;
-top: 78px;
-color:black;
+    position: absolute;
+    margin-right: 30px;
+    top: 78px;
+    color:black;
 }
 
-
-
 .fa-magnifying-glass{
-color: white;
-font-size:20px;
-padding:5px;
+    color: white;
+    font-size:20px;
+    padding:5px;
 }

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom"
-import { getDetails } from "../../Api/movie";
+import { getDetails } from "../../api/movie";
 import "./details.css"
 
 const Details=()=> {
@@ -14,8 +14,6 @@ const Details=()=> {
             setDetils(respuesta)
         })
     },[id])
-
-    console.log(details)
 
     return (
       <div className="contenedor-details">

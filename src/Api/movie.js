@@ -16,7 +16,7 @@ export const getPopular = (page = 1) => {
 
 export const getDetails = (id) => {
 
-    const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=70631dfdc1d4ef58b1c255cc90e62b6c&language=en-US`
+    const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=70631dfdc1d4ef58b1c255cc90e62b6c&language=es-Es`
 
     return fetch(URL)
     .then((response) => {

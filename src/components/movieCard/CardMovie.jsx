@@ -12,16 +12,22 @@ const CardMovie=({titulo, img, fecha,id})=> {
 
     return (
       <div className="contenedor-cardmovie">
-        <div className="contenedor-header-img">
-            <img className="header-img" src={img} alt="header-img"  height={200}/>
-        </div>
-        <div>
-          <h3>{titulo}</h3>
-        </div>
-          <div>
-            <p className="fechapeli">Año de Estreno {fecha}</p>
+        <div className="subcontainer-cardmovie">
+          <div className="contenedor-header-img">
+            <img 
+              className="header-img" 
+              src={img} alt="header-img"  
+              height={200}
+            />
           </div>
-        <div>
+          <div className="container-cardmovie-title">
+            <h3>{titulo}</h3>
+          </div>
+          <div>
+            <p className="fechapeli">Año de Estreno: {fecha}</p>
+          </div>
+        </div>
+        <div className="cont-cardmovie-button">
           <button onClick={ ()=>verDetalle(id) }>Ver mas</button>
         </div>
       </div>
