@@ -13,7 +13,7 @@ const CardMovie=({titulo, img, fecha,id})=> {
     return (
       <div className="contenedor-cardmovie">
         <div className="contenedor-header-img">
-            <img className="header-img" src={img} alt=""  height={200}/>
+            <img className="header-img" src={img} alt="header-img"  height={200}/>
         </div>
         <div>
           <h3>{titulo}</h3>

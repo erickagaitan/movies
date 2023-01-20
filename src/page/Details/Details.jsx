@@ -19,7 +19,7 @@ const Details=()=> {
 
     return (
       <div className="contenedor-details">
-        <img className="imgdescrip" src= {`https://image.tmdb.org/t/p/w500${details?.poster_path}`}/>
+        <img className="imgdescrip" src= {`https://image.tmdb.org/t/p/w500${details?.poster_path}`} alt={`https://image.tmdb.org/t/p/w500${details?.poster_path}`} />
         <div>
           <h3>
             {details?.title}
