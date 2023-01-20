@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import CardMovie from "../../components/movieCard/CardMovie";
 import Buscador from '../../components/buscador/Buscador';
-import { getPopular, searchMoviesApi } from "../../api/movie";
+import { getPopular, searchMoviesApi } from "../../Api/movie";
 
 import "./home.css"
 

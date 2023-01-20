@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom"
-import { getDetails } from "../../api/movie";
+import { getDetails } from "../../Api/movie";
 
 import "./details.css"
 
